@@ -1,0 +1,24 @@
+{
+  "name": "esbrickjs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+  },
+  "keywords": [
+    "lodash",
+    "lodash-es",
+    "bricksjs",
+    "szchason"
+  ],
+  "author": "szchason",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/szchason/esbrickjs/issues"
+  },
+  "license": "MIT"
+}
