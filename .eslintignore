@@ -1,0 +1,5 @@
+# ESlint ignore files
+node_modules
+dist/**
+docs/**
+.dumi
