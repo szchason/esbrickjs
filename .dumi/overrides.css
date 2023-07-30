@@ -1,0 +1,11 @@
+.dumi-default-features {
+  display: flex;
+}
+
+.dumi-default-features-item {
+  text-align: center;
+}
+
+.dumi-default-features[data-cols='2'] > .dumi-default-features-item:nth-child(odd) {
+  margin-inline-end: 0 !important
+}
