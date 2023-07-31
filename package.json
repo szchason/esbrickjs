@@ -27,12 +27,13 @@
     "docs:build": "cross-env NODE_ENV=production dumi build docs",
     "clean": "rimraf types/",
     "eslint": "eslint **/*.{ts,js}",
+    "test": "jest",
     "lint-staged": "npx lint-staged"
   },
   "keywords": [
     "lodash",
     "lodash-es",
-    "bricksjs",
+    "esbricksjs",
     "szchason"
   ],
   "author": "szchason",

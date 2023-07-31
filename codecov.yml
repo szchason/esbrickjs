@@ -1,0 +1,16 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 95%
+        threshold: '5%'
+        branches:
+          - main
+        informational: false
+    patch:
+      default:
+        target: 90%
+        threshold: '10%'
+        branches:
+          - main
+        informational: false
