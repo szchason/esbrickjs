@@ -1,0 +1,69 @@
+# Simple workflow for publish npm package
+name: Release
+on:
+  workflow_dispatch:
+    inputs:
+      type:
+        type: choice
+        description: Choose release type
+        options:
+          - auto
+          - patch
+          - minor
+          - major
+        default: auto
+      beta:
+        type: boolean
+        description: Prerelease
+        default: false
+      npm:
+        type: boolean
+        description: NPM release
+        default: true
+      dry:
+        type: boolean
+        description: Dry release
+        default: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Set pnpm Version
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - name: Set up Node 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install
+      - name: Run tests and collect coverage
+        run: pnpm test
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+      - name: Set Git Config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - name: Initialise the NPM config
+        run: npm config set //registry.npmjs.org:_authToken $NPM_TOKEN
+      - name: Run release
+        run: pnpm release --ci --verbose $TYPE_ARG $BETA_ARG $DRY_ARG
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          TYPE_ARG: ${{ fromJSON('{"auto":"", "patch":"--patch", "minor":"--minor", "major":"--major"}')[github.event.inputs.type] }}
+          BETA_ARG: ${{ github.event.inputs.beta == 'true' && '--preRelease=beta' || '' }}
+          DRY_ARG: ${{ github.event.inputs.dry == 'true' && '--dry-run' || '' }}
+      - name: Publish
+        if: ${{ github.event.inputs.dry == 'false' && github.event.inputs.npm == 'true' }}
+        run: npm publish

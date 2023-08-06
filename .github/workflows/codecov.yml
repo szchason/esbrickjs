@@ -1,7 +1,7 @@
-name: Check
-on: [push, pull_request]
+name: Codecov
+on: [workflow_dispatch]
 jobs:
-  run:
+  codecov:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

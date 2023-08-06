@@ -25,6 +25,7 @@
     "build": "npm-run-all build:*",
     "docs:dev": "cross-env NODE_ENV=development dumi dev docs",
     "docs:build": "cross-env NODE_ENV=production dumi build docs",
+    "release": "release-it  -c .versionrc.js",
     "eslint": "eslint **/*.{ts,js}",
     "eslint:fix": "eslint **/*.{ts,js} --fix",
     "format": "prettier **/*.{ts,js,json,yaml,yml} --write .",
