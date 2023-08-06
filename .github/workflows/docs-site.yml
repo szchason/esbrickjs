@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Docs site
+name: Deploy Docs site
 
 on:
   release:
