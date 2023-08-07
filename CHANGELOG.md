@@ -1,5 +1,18 @@
 # 更新日志
 
+## [0.1.0](https://github.com/szchason/esbrickjs/compare/0.1.0-beta.0...0.1.0) (2023-08-07)
+
+
+### ✨ Features | 新功能
+
+* add README.md ([f4483f1](https://github.com/szchason/esbrickjs/commit/f4483f1dc0b2a9fe7afff198b8148012d6780fd2))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* fix README.md ([9714e51](https://github.com/szchason/esbrickjs/commit/9714e51c44ed54e980e1f1313f3f97d20531adca))
+* fix README.md ([d764b82](https://github.com/szchason/esbrickjs/commit/d764b824196330e66cea86b40e12e116fed255f6))
+
 ## 0.1.0-beta.0 (2023-08-06)
 
 
