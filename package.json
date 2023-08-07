@@ -39,6 +39,10 @@
     "esbricksjs",
     "szchason"
   ],
+  "files": [
+    "dist",
+    "types"
+  ],
   "author": "szchason",
   "publishConfig": {
     "access": "public",
@@ -47,6 +51,7 @@
   "bugs": {
     "url": "https://github.com/szchason/esbrickjs/issues"
   },
+  "homepage": "https://szchason.github.io/esbrickjs",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.22.9",

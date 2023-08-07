@@ -8,10 +8,10 @@ export default defineConfig({
   base: serverBasePath,
   publicPath: serverPublicPath,
   outputPath: './docs/build',
-  favicons: ['https://gitee.com/szchason/pic_bed/raw/site/bricksjs/favicon.ico'],
+  favicons: ['https://gitee.com/szchason/pic_bed/raw/site/esbricksjs/favicon.ico'],
   themeConfig: {
     name: 'esbrickjs',
-    logo: 'https://gitee.com/szchason/pic_bed/raw/site/bricksjs/logo.jpg',
+    logo: 'https://gitee.com/szchason/pic_bed/raw/site/esbricksjs/logo.svg',
     nav: [
       {
         title: 'Docs',
