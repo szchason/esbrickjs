@@ -6,6 +6,7 @@
   <p>
     A javascript utility library.
   </p>
+
   [![npm (tag)](https://img.shields.io/npm/v/esbrickjs)](https://www.npmjs.com/package/esbrickjs) [![codecov](https://codecov.io/gh/szchason/esbrickjs/branch/main/graph/badge.svg?token=JSFSZH5K9O)](https://codecov.io/gh/szchason/esbrickjs) ![npm](https://img.shields.io/npm/dw/esbrickjs) ![GitHub](https://img.shields.io/github/license/szchason/esbrickjs) [![Release](https://github.com/szchason/esbrickjs/actions/workflows/release.yml/badge.svg)](https://github.com/szchason/esbrickjs/actions/workflows/release.yml)
 
 </div>
