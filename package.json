@@ -4,15 +4,15 @@
   "description": "A javascript utility library",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
-  "types": "./types/src/browser.d.ts",
+  "types": "./types/browser.d.ts",
   "exports": {
     ".": {
       "import": {
-        "types": "./types/src/browser.d.ts",
+        "types": "./types/browser.d.ts",
         "default": "./dist/index.es.js"
       },
       "require": {
-        "types": "./types/src/node.d.ts",
+        "types": "./types/node.d.ts",
         "default": "./dist/index.cjs.js"
       }
     }
@@ -52,6 +52,10 @@
     "url": "https://github.com/szchason/esbrickjs/issues"
   },
   "homepage": "https://szchason.github.io/esbrickjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szchason/esbrickjs.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.22.9",
