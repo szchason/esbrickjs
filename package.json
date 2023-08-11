@@ -4,17 +4,13 @@
   "description": "A javascript utility library",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
-  "types": "./types/browser.d.ts",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
-      "import": {
-        "types": "./types/browser.d.ts",
-        "default": "./dist/index.es.js"
-      },
-      "require": {
-        "types": "./types/node.d.ts",
-        "default": "./dist/index.cjs.js"
-      }
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.es.js"
     }
   },
   "scripts": {

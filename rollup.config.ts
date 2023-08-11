@@ -36,7 +36,7 @@ function getBabelConfig(target) {
  */
 export default [
   {
-    input: 'src/browser.ts',
+    input: 'src/index.ts',
     output: {
       file: 'dist/index.es.js',
       format: 'es',
@@ -50,7 +50,7 @@ export default [
     ],
   },
   {
-    input: 'src/node.ts',
+    input: 'src/index.ts',
     output: {
       file: 'dist/index.cjs.js',
       format: 'cjs',
