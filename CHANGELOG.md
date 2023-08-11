@@ -1,5 +1,15 @@
 # 更新日志
 
+## [0.1.1](https://github.com/szchason/esbrickjs/compare/0.1.0...0.1.1) (2023-08-11)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* delete node.ts and node.d.ts ([ad46b0a](https://github.com/szchason/esbrickjs/commit/ad46b0a671eb3bf04bb50670d84dffcec008233b))
+* fix package.json exports ([69e7ebb](https://github.com/szchason/esbrickjs/commit/69e7ebb6d3dd3dfc4f93ab12758d153bec515bee))
+* fix README.md badge ([40dfaa7](https://github.com/szchason/esbrickjs/commit/40dfaa705a04ec2c3f62d84313b265f36eb79e51))
+* fix README.md badge ([953841f](https://github.com/szchason/esbrickjs/commit/953841fa4bcea08b221fc0090a3b410d95f866e5))
+
 ## [0.1.0](https://github.com/szchason/esbrickjs/compare/0.1.0-beta.0...0.1.0) (2023-08-07)
 
 
